@@ -1,0 +1,21 @@
+<ul class="menu-list">
+    <img src="{{personaje.imagen}}" (click)="clickEnImagen()"/>
+    <li><strong> {{personaje.nombre}} </strong></li>
+    <li>Especie : <span *ngIf="personaje.especie; else 
+na">{{personaje.especie}}</span></li>
+    <li>Género : <span *ngIf="personaje.genero; else 
+na">{{personaje.genero}}</span></li>
+    <li>Casa : <span *ngIf="personaje.casa; else 
+na">{{personaje.casa}}</span></li>
+    <li>Color de ojos : <span *ngIf="personaje.colorOjos; else 
+na">{{personaje.colorOjos}}</span></li>
+    <li>Color del pelo : <span *ngIf="personaje.colorPelo; else 
+na">{{personaje.colorPelo}}</span></li>
+    <li>Madera de la varita mágica : <span *ngIf="personaje.varitaMagica.madera; else 
+na">{{personaje.varitaMagica.madera}}</span></li>
+    <li>Centro de la varita mágica : <span *ngIf="personaje.varitaMagica.centro; else 
+na">{{personaje.varitaMagica.centro}}</span></li>
+    <li>Tamaño de la varita mágica : <span *ngIf="personaje.varitaMagica.tamanio; else 
+na">{{personaje.varitaMagica.tamanio}}</span></li>
+    <ng-template #na>N/A</ng-template>
+</ul>
